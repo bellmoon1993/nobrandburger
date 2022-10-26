@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>노브랜드 버거</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="./js/common.js" defer></script>
+    <script src="./js/menu.js" defer></script>
+    
+  </head>
+  <body>
+    <div id="headerWrap" class="on">
+      <header id="header">
+        <h1 class="logo"><a href="index.html">로고</a></h1>
+        <div class="webNav">
+        <nav id="gnb">
+          <h2 class="hidden">주메뉴</h2>
+          <ul id="gnbList">
+            <li><a href="menu.html">메뉴</a></li>
+            <li><a href="#">매장</a></li>
+            <li id="news"><a href="#">새 소식</a>
+              <ul class="snb">
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">뉴스</a></li>
+              </ul>
+            </li>
+            <li><a href="brandstory.html">브랜드 스토리</a></li>
+            <li><a href="#">가맹안내</a></li>
+          </ul>
+        </nav>
+        <nav id="ssg">
+          <h2 class="hidden">신세계 메뉴</h2>
+          <ul>
+            <li class="ssgFood"><a href="http://www.shinsegaefood.com/">신세계푸드</a></li>
+            <li class="service"><a href="http://www.shinsegaefood.com/cs/voc.sf">고객지원</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobileNav">
+        <a href="#" id="hamburgerBar">햄버거바</a>
+        <div id="mob_nav">
+          <a href="#" id="cancelBar">닫힘버튼</a>
+          <nav id="mob_gnb">
+            <h2 class="hidden">모바일주메뉴</h2>
+            <ul id="mob_gnbList">
+              <li><a href="menu.html">메뉴</a></li>
+              <li><a href="#">매장</a></li>
+              <li id="mob_news"><a href="#">새 소식</a>
+                <ul class="mob_snb">
+                  <li><a href="#">이벤트</a></li>
+                  <li><a href="#">뉴스</a></li>
+                </ul>
+              </li>
+              <li><a href="brandstory.html">브랜드 스토리</a></li>
+              <li><a href="#">가맹안내</a></li>
+            </ul>
+          </nav>
+          <nav id="mob_ssg">
+            <h2 class="hidden">신세계 메뉴</h2>
+            <ul>
+              <li class="mob_ssgFood"><a href="#">신세계푸드</a></li>
+              <li class="mob_service"><a href="#">고객지원</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      </header>
+    </div>
+    <main>
+       <section id="menuBanner">
+        <h2 class="hidden">메뉴배너</h2>
+       </section>
+       <section id="menuImgWrap">
+        <h2 class="hidden">노브랜드 메뉴</h2>
+        <div id="menuTabBtn">
+            <a href="#" data-num="1">all</a>
+            <a href="#" data-num="2">super-licious burger</a>
+            <a href="#" data-num="3">signature burger pack</a>
+            <a href="#" data-num="4">house special</a>
+            <a href="#" data-num="5">salad</a>
+            <a href="#" data-num="6">side</a>
+            <a href="#" data-num="7">beverage</a>
+        </div>
+        <div id="menuImg">
+            <div class="all box num1">
+              <h3>all</h3>
+              <ul class="all">
+                  <li><img src="images/menu_img/superlicious/갈릭앤갈릭버거.png" alt="갈릭앤갈릭버거">
+                    <p>갈릭앤갈릭</p><p>Garlic & Garlic</p>
+                  <dl>
+                    <dt>갈릭앤갈릭<span><br>Garlic & Garlic</span></dt>
+                    <dd>520kal</dd>
+                    <dd>갈릭칩과 갈릭소스로 진한 갈릭의 풍미가<br> 2배인 버거</dd>
+                  </dl>
+                  </li>
+                  <li><img src="images/menu_img/superlicious/골드커리.png" alt="골드커리">
+                    <p>골드커리</p><p>Gold Curry</p>
+                    <dl>
+                      <dt>골드커리<span><br>Gold Curry</span></dt>
+                      <dd>538kal</dd>
+                      <dd>두툼한 패티 아래위로 감싸는 커리소스의 풍미가 <br>일품인 버거</dd>
+                    </dl>
+                  </li>
+                  <li><img src="images/menu_img/superlicious/더블골드커리.png" alt="더블골드커리">
+                    <p>더블골드커리</p><p>Double Gold Curry</p>
+                    <dl>
+                      <dt>더블골드커리<span><br>Double Gold Curry</span></dt>
+                      <dd>628kal</dd>
+                      <dd>두툼한 패티가 두배! <br>커리소스의 풍미도 2배로 느껴지는 버거</dd>
+                    </dl>
+                  </li>
+                  <li><img src="images/menu_img/superlicious/더블치즈_베이컨_시그니처(1).png" alt="더블베이컨시그니처">
+                    <p>더블베이컨시그니처</p><p>Double Cheese Bacon Signature</p>
+                    <dl>
+                      <dt>더블치즈베이컨 시그니처<span><br>Double Cheese Bacon Signature</span></dt>
+                      <dd>544kal</dd>
+                      <dd>베이컨과 더블치즈가 만나 스모크한 풍미와<br> 고소함이 더해진 아메리칸 클래식 버거</dd>
+                    </dl>
+                  </li>
+                  <li><img src="images/menu_img/superlicious/데리마요버거.png" alt="데리마요버거">
+                    <p>데리마요</p><p>Teri-Mayo</p>
+                    <dl>
+                      <dt>데리마요<span><br>Teri-Mayo</span></dt>
+                      <dd>514kal</dd>
+                      <dd>마요네즈의 부드러움과 바베큐소스가 만나<br> 패티와 채소의 맛이 더 부드럽고 풍부한 버거</dd>
+                    </dl>
+                  </li>
+                  <li><img src="images/menu_img/superlicious/코울슬로치킨.png" alt="코울슬로치킨">
+                    <p>코울슬로 치킨</p><p>Coleslaw Chicken</p>
+                    <dl>
+                      <dt>코울슬로 치킨<span><br>Coleslaw Chicken</span></dt>
+                      <dd>504kal</dd>
+                      <dd>아삭한 식감이 살아있는 달콤한 코울슬로와 바삭하게 튀긴 통가슴살 치킨 패티가 어우러진 버거</dd>
+                    </dl>
+                  </li>
+                  <li><img src="images/menu_img/superlicious/페퍼로니버거_home.png" alt="페퍼로니버거">
+                    <p>페퍼로니</p><p>Pepperoni</p>
+                    <dl>
+                      <dt>페퍼로니<span><br>Pepperoni</span></dt>
+                      <dd>473kal</dd>
+                      <dd>두툼한 패티 위에 풍미 가득 페퍼로니와 진한 치즈가 더해진 버거</dd>
+                    </dl>
+                  </li>
+                  <li><img src="images/menu_img/superlicious/페퍼로니치킨_home.png" alt="페퍼로니치킨">
+                    <p>페퍼로니치킨</p><p>Pepperoni Chicken</p>
+                    <dl>
+                      <dt>페퍼로니치킨<span><br>Pepperoni Chicken</span></dt>
+                      <dd>464kal</dd>
+                      <dd>통살 치킨 패티와 풍미 가득 페퍼로니, 토마토 소스가 더해진 버거</dd>
+                    </dl>
+                  </li>
+                  <li><img src="images/menu_img/signatureburger_pack/시그니처_투게더팩.png" alt="시그니처 투게더팩">
+                    <p>시그니처 투게더팩</p><p>Signature Together Pack</p>
+                    <dl>
+                      <dt>시그니처 투게더팩<span><br>Signature Together Pack</span></dt>
+                      <dd>1,733~1,795kal</dd>
+                      <dd>대표메뉴 NBB 시그니처를 둘이서
+                        가볍게 즐길 수 있는 투게더팩</dd>
+                    </dl>
+                  </li>
+                  <li><img src="images/menu_img/signatureburger_pack/시그니처_파티팩.png" alt="시그니처 파티팩">
+                    <p>시그니처 파티팩</p><p>Signature Party Pack</p>
+                    <dl>
+                      <dt>시그니처 파티팩<span><br>Signature Party Pack</span></dt>
+                      <dd>2,561~2,654kal</dd>
+                      <dd>대표메뉴 NBB 시그니처를
+                        다양하게 즐길 수 있는 파티팩</dd>
+                    </dl>
+                  </li>
+                  <li><img src="images/menu_img/house_special/상하이포크.png" alt="상하이포크">
+                    <p>크리스피 상하이포크</p><p>Crispy ShangHai Pork</p>
+                    <dl>
+                      <dt>크리스피 상하이포크<span><br>Crispy ShangHai Pork</span></dt>
+                      <dd>368kal</dd>
+                      <dd>크리스피한 식감과 감칠맛나는 향신료의
+                        조합으로 자꾸만 손이 가는
+                        상하이 스타일의 하우스스페셜 메뉴</dd>
+                      </dl>
+                  </li>
+                  <li><img src="images/menu_img/house_special/페퍼로니치아바타.png" alt="페퍼로니치아바타">
+                    <p>페퍼로니 치아바타</p><p>Pepperoni Ciabatta</p>
+                    <dl>
+                      <dt>페퍼로니 치아바타<span><br>Pepperoni Ciabatta</span></dt>
+                      <dd>540kal</dd>
+                      <dd>치아바타에 풍미 가득 페퍼로니와 그릴 치즈로 든든한 오븐 샌드위치</dd>
+                    </dl>
+                  </li>
+                  <li><img src="images/menu_img/salad/치킨시저샐러드.png" alt="치킨시저샐러드">
+                    <p>치킨시저샐러드</p><p>Chicken Ceasar Salad</p>
+                    <dl>
+                      <dt>치킨시저샐러드<span><br>Chicken Ceasar Salad</span></dt>
+                      <dd>276kal</dd>
+                      <dd>아삭하고 신선한 채소에 든든한 치킨 텐더와 갈릭시저드레싱으로 한끼 식사로 손색없는 샐러드</dd>
+                    </dl>
+                  </li>
+                  <li><img src="images/menu_img/salad/상하이포크샐러드.png" alt="상하이포크샐러드">
+                    <p>상하이포크샐러드</p><p>Shanghai Pork Salad</p>
+                    <dl>
+                      <dt>상하이포크샐러드<span><br>Shanghai Pork Salad</span></dt>
+                      <dd>249kal</dd>
+                      <dd>아삭하고 신선한 채소에 든든한 상하이포크 튀김과
+                        이탈리안드레싱으로 한끼 식사로 손색없는 샐러드</dd>
+                    </dl>
+                  </li>
+                  <li><img src="images/menu_img/salad/그린샐러드.png" alt="그린샐러드">
+                    <p>그린샐러드</p><p>Green Salad</p>
+                    <dl>
+                      <dt>그린샐러드<span><br>Green Salad</span></dt>
+                      <dd>65kal</dd>
+                      <dd>아삭하고 신선한 채소에 이탈리안드레싱으로 한끼 식사로 손색없는 샐러드</dd>
+                    </dl>
+                  </li>
+                  <li><img src="images/menu_img/side/크런치윙.png" alt="크런치윙">
+                    <p>크런치 윙</p><p>Crunchy Wing</p>
+                    <dl>
+                      <dt>크런치 윙<span><br>Crunchy Wing</span></dt>
+                      <dd>187kal(2조각)</dd>
+                      <dd>바삭함이 터지는 NBB만의 크런치 윙</dd>
+                    </dl>
+                  </li>
+                  <li><img src="images/menu_img/side/크런치오징어.png" alt="크런치오징어">
+                    <p>크런치 오징어</p><p>Crunchy Squid</p>
+                    <dl>
+                      <dt>크런치 오징어<span><br>Crunchy Squid</span></dt>
+                      <dd>136kal</dd>
+                      <dd>오징어를 두툼하게 썰어 넣어
+                        쫄깃하고 바삭한 크런치 오징어</dd>
+                    </dl>  
+                  </li>
+                  <li><img src="images/menu_img/side/치킨-너겟.png" alt="치킨너겟">
+                    <p>NBB 치킨 너겟</p><p>Chicken Nugget</p>
+                    <dl>
+                      <dt>NBB 치킨 너겟<span><br>Chicken Nugget</span></dt>
+                      <dd>134kal(3조각)</dd>
+                      <dd>닭다리 모양으로 먹는 재미를 더한 바삭한 치킨 너겟</dd>
+                    </dl>  
+                  </li>
+                  <li><img src="images/menu_img/side/인절미.png" alt="인절미">
+                    <p>인절미 치즈볼</p><p>Injeolmi Cheese Ball</p>
+                    <dl>
+                      <dt>인절미 치즈볼<span><br>Injeolmi Cheese Ball</span></dt>
+                      <dd>370kal</dd>
+                      <dd>모짜렐라 치즈가 듬뿍 든 바삭한 치즈볼에 고소한 인절미 가루가 더해진 인절미 치즈볼.
+                        <br>※판매제외매장 : 행담도휴게소점</dd>
+                    </dl>  
+                  </li>
+                  <li><img src="images/menu_img/side/어니언도넛.png" alt="어니언도넛">
+                    <p>어니언 도넛</p><p>Onion Doughnut</p>
+                    <dl>
+                      <dt>어니언 도넛<span><br>Onion Doughnut</span></dt>
+                      <dd>348kal</dd>
+                      <dd>촉촉함과 바삭함을 동시에 느낄 수 있는 NBB만의 어니언 도넛.</dd>
+                    </dl> 
+                  </li>
+                  <li><img src="images/menu_img/side/슈가버터_프라이.png" alt="슈가버터프라이">
+                    <p>슈가버터 프라이</p><p>Sugar Butter Fries</p>
+                    <dl>
+                      <dt>슈가버터 프라이<span><br>Sugar Butter Fries</span></dt>
+                      <dd>369kal</dd>
+                      <dd>달콤한 버터 시럽을 뿌린 감자튀김과 진한 그라나파다노 치즈 토핑의 만남</dd>
+                    </dl> 
+                  </li>
+                  <li><img src="images/menu_img/bevarage/브랜드콜라사이다.png" alt="브랜드콜라사이다">
+                    <p>브랜드 콜라/사이다</p><p>Brand Cola/Cider</p>
+                    <dl>
+                      <dt>브랜드 콜라/사이다<span><br>Brand Cola/Cider</span></dt>
+                      <dd>160kal</dd>
+                      <dd>노브랜드 버거에서만 만나볼 수 있는
+                        브랜드 콜라, 사이다</dd>
+                    </dl> 
+                  </li>
+                  <li><img src="images/menu_img/bevarage/브랜드제로콜라사이다.png" alt="브랜드제로콜라사이다">
+                    <p>브랜드 콜라/사이다 제로</p><p>Brand Cola/Cider zero</p>
+                    <dl>
+                      <dt>브랜드 콜라/사이다 제로<span><br>Brand Cola/Cider zero</span></dt>
+                      <dd>0kal</dd>
+                      <dd>부담없이 가볍게 즐길 수 있는
+                        브랜드 콜라, 사이다 제로 </dd>
+                    </dl> 
+                  </li>
+                  <li><img src="images/menu_img/bevarage/콜라.png" alt="콜라">
+                    <p>탄산음료<br>(펩시콜라/사이다/미린다(오렌지)/<br>펩시제로슈가(라임향))</p><p>Soda</p>
+                    <dl>
+                      <dt>탄산음료<span><br>Soda</span></dt>
+                      <dd>129~149kal</dd>
+                      <dd>탄산음료(펩시콜라/사이다/미린다(오렌지)/'펩시제로슈가(라임향))</dd>
+                    </dl> 
+                  </li>
+                  <li><img src="images/menu_img/bevarage/오렌지주스.png" alt="오렌지주스">
+                    <p>오렌지주스</p><p>Orange Juice</p>
+                    <dl>
+                      <dt>오렌지주스<span><br>Orange Juice</span></dt>
+                      <dd>420kal</dd>
+                      <dd></dd>
+                    </dl> 
+                  </li>
+                  <li><img src="images/menu_img/bevarage/커피.png" alt="커피">
+                    <p>아메리카노</p><p>Americano</p>
+                    <dl>
+                      <dt>아메리카노<span><br>Americano</span></dt>
+                      <dd>15kal</dd>
+                      <dd></dd>
+                    </dl> 
+                  </li>
+                  <li><img src="images/menu_img/bevarage/노라벨_생수(1).png" alt="노라벨생수">
+                    <p>노라벨 생수</p><p>Mineral water</p>
+                    <dl>
+                      <dt>노라벨 생수<span><br>Mineral water</span></dt>
+                      <dd>0kal</dd>
+                      <dd>비닐 라벨이 없어 분리배출이 편한 친환경 노라벨 생수</dd>
+                    </dl> 
+                  </li>
+              </ul>
+            </div>
+            <div class="super-licious box num2">
+              <h3>super-licious burger</h3>
+              <ul class="super-licious">
+                <li><img src="images/menu_img/superlicious/갈릭앤갈릭버거.png" alt="갈릭앤갈릭버거">
+                  <p>갈릭앤갈릭</p><p>Garlic & Garlic</p>
+                <dl>
+                  <dt>갈릭앤갈릭<span><br>Garlic & Garlic</span></dt>
+                  <dd>520kal</dd>
+                  <dd>갈릭칩과 갈릭소스로 진한 갈릭의 풍미가<br> 2배인 버거</dd>
+                </dl>
+                </li>
+                <li><img src="images/menu_img/superlicious/골드커리.png" alt="골드커리">
+                  <p>골드커리</p><p>Gold Curry</p>
+                  <dl>
+                    <dt>골드커리<span><br>Gold Curry</span></dt>
+                    <dd>538kal</dd>
+                    <dd>두툼한 패티 아래위로 감싸는 커리소스의 풍미가 <br>일품인 버거</dd>
+                  </dl>
+                </li>
+                <li><img src="images/menu_img/superlicious/더블골드커리.png" alt="더블골드커리">
+                  <p>더블골드커리</p><p>Double Gold Curry</p>
+                  <dl>
+                    <dt>더블골드커리<span><br>Double Gold Curry</span></dt>
+                    <dd>628kal</dd>
+                    <dd>두툼한 패티가 두배! <br>커리소스의 풍미도 2배로 느껴지는 버거</dd>
+                  </dl>
+                </li>
+                <li><img src="images/menu_img/superlicious/더블치즈_베이컨_시그니처(1).png" alt="더블베이컨시그니처">
+                  <p>더블베이컨시그니처</p><p>Double Cheese Bacon Signature</p>
+                  <dl>
+                    <dt>더블치즈베이컨 시그니처<span><br>Double Cheese Bacon Signature</span></dt>
+                    <dd>544kal</dd>
+                    <dd>베이컨과 더블치즈가 만나 스모크한 풍미와<br> 고소함이 더해진 아메리칸 클래식 버거</dd>
+                  </dl>
+                </li>
+                <li><img src="images/menu_img/superlicious/데리마요버거.png" alt="데리마요버거">
+                  <p>데리마요</p><p>Teri-Mayo</p>
+                  <dl>
+                    <dt>데리마요<span><br>Teri-Mayo</span></dt>
+                    <dd>514kal</dd>
+                    <dd>마요네즈의 부드러움과 바베큐소스가 만나<br> 패티와 채소의 맛이 더 부드럽고 풍부한 버거</dd>
+                  </dl>
+                </li>
+                <li><img src="images/menu_img/superlicious/코울슬로치킨.png" alt="코울슬로치킨">
+                  <p>코울슬로 치킨</p><p>Coleslaw Chicken</p>
+                  <dl>
+                    <dt>코울슬로 치킨<span><br>Coleslaw Chicken</span></dt>
+                    <dd>504kal</dd>
+                    <dd>아삭한 식감이 살아있는 달콤한 코울슬로와 바삭하게 튀긴 통가슴살 치킨 패티가 어우러진 버거</dd>
+                  </dl>
+                </li>
+                <li><img src="images/menu_img/superlicious/페퍼로니버거_home.png" alt="페퍼로니버거">
+                  <p>페퍼로니</p><p>Pepperoni</p>
+                  <dl>
+                    <dt>페퍼로니<span><br>Pepperoni</span></dt>
+                    <dd>473kal</dd>
+                    <dd>두툼한 패티 위에 풍미 가득 페퍼로니와 진한 치즈가 더해진 버거</dd>
+                  </dl>
+                </li>
+                <li><img src="images/menu_img/superlicious/페퍼로니치킨_home.png" alt="페퍼로니치킨">
+                  <p>페퍼로니치킨</p><p>Pepperoni Chicken</p>
+                  <dl>
+                    <dt>페퍼로니치킨<span><br>Pepperoni Chicken</span></dt>
+                    <dd>464kal</dd>
+                    <dd>통살 치킨 패티와 풍미 가득 페퍼로니, 토마토 소스가 더해진 버거</dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+            <div class="signature_pack box num3">
+              <h3>signature burger pack</h3>
+                <ul class="signature_pack">
+                  <li><img src="images/menu_img/house_special/상하이포크.png" alt="상하이포크">
+                    <p>크리스피 상하이포크</p><p>Crispy ShangHai Pork</p>
+                    <dl>
+                      <dt>크리스피 상하이포크<span><br>Crispy ShangHai Pork</span></dt>
+                      <dd>368kal</dd>
+                      <dd>크리스피한 식감과 감칠맛나는 향신료의
+                        조합으로 자꾸만 손이 가는
+                        상하이 스타일의 하우스스페셜 메뉴</dd>
+                      </dl>
+                  </li>
+                  <li><img src="images/menu_img/house_special/페퍼로니치아바타.png" alt="페퍼로니치아바타">
+                    <p>페퍼로니 치아바타</p><p>Pepperoni Ciabatta</p>
+                    <dl>
+                      <dt>페퍼로니 치아바타<span><br>Pepperoni Ciabatta</span></dt>
+                      <dd>540kal</dd>
+                      <dd>치아바타에 풍미 가득 페퍼로니와 그릴 치즈로 든든한 오븐 샌드위치</dd>
+                    </dl>
+                  </li>
+                </ul>
+            </div>
+            <div class="house_special box num4">
+              <h3>house special</h3>
+              <ul class="house_special">
+                <li><img src="images/menu_img/house_special/상하이포크.png" alt="상하이포크">
+                  <p>크리스피 상하이포크</p><p>Crispy ShangHai Pork</p>
+                  <dl>
+                    <dt>크리스피 상하이포크<span><br>Crispy ShangHai Pork</span></dt>
+                    <dd>368kal</dd>
+                    <dd>크리스피한 식감과 감칠맛나는 향신료의
+                      조합으로 자꾸만 손이 가는
+                      상하이 스타일의 하우스스페셜 메뉴</dd>
+                    </dl>
+                </li>
+                <li><img src="images/menu_img/house_special/페퍼로니치아바타.png" alt="페퍼로니치아바타">
+                  <p>페퍼로니 치아바타</p><p>Pepperoni Ciabatta</p>
+                  <dl>
+                    <dt>페퍼로니 치아바타<span><br>Pepperoni Ciabatta</span></dt>
+                    <dd>540kal</dd>
+                    <dd>치아바타에 풍미 가득 페퍼로니와 그릴 치즈로 든든한 오븐 샌드위치</dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+            <div class="salad box num5">
+              <h3>salad</h3>
+              <ul class="salad">
+                <li><img src="images/menu_img/salad/치킨시저샐러드.png" alt="치킨시저샐러드">
+                  <p>치킨시저샐러드</p><p>Chicken Ceasar Salad</p>
+                  <dl>
+                    <dt>치킨시저샐러드<span><br>Chicken Ceasar Salad</span></dt>
+                    <dd>276kal</dd>
+                    <dd>아삭하고 신선한 채소에 든든한 치킨 텐더와 갈릭시저드레싱으로 한끼 식사로 손색없는 샐러드</dd>
+                  </dl>
+                </li>
+                <li><img src="images/menu_img/salad/상하이포크샐러드.png" alt="상하이포크샐러드">
+                  <p>상하이포크샐러드</p><p>Shanghai Pork Salad</p>
+                  <dl>
+                    <dt>상하이포크샐러드<span><br>Shanghai Pork Salad</span></dt>
+                    <dd>249kal</dd>
+                    <dd>아삭하고 신선한 채소에 든든한 상하이포크 튀김과
+                      이탈리안드레싱으로 한끼 식사로 손색없는 샐러드</dd>
+                  </dl>
+                </li>
+                <li><img src="images/menu_img/salad/그린샐러드.png" alt="그린샐러드">
+                  <p>그린샐러드</p><p>Green Salad</p>
+                  <dl>
+                    <dt>그린샐러드<span><br>Green Salad</span></dt>
+                    <dd>65kal</dd>
+                    <dd>아삭하고 신선한 채소에 이탈리안드레싱으로 한끼 식사로 손색없는 샐러드</dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+            <div class="side box num6">
+              <h3>side</h3>
+              <ul class="side">
+                <li><img src="images/menu_img/side/크런치윙.png" alt="크런치윙">
+                  <p>크런치 윙</p><p>Crunchy Wing</p>
+                  <dl>
+                    <dt>크런치 윙<span><br>Crunchy Wing</span></dt>
+                    <dd>187kal(2조각)</dd>
+                    <dd>바삭함이 터지는 NBB만의 크런치 윙</dd>
+                  </dl>
+                </li>
+                <li><img src="images/menu_img/side/크런치오징어.png" alt="크런치오징어">
+                  <p>크런치 오징어</p><p>Crunchy Squid</p>
+                  <dl>
+                    <dt>크런치 오징어<span><br>Crunchy Squid</span></dt>
+                    <dd>136kal</dd>
+                    <dd>오징어를 두툼하게 썰어 넣어
+                      쫄깃하고 바삭한 크런치 오징어</dd>
+                  </dl>  
+                </li>
+                <li><img src="images/menu_img/side/치킨-너겟.png" alt="치킨너겟">
+                  <p>NBB 치킨 너겟</p><p>Chicken Nugget</p>
+                  <dl>
+                    <dt>NBB 치킨 너겟<span><br>Chicken Nugget</span></dt>
+                    <dd>134kal(3조각)</dd>
+                    <dd>닭다리 모양으로 먹는 재미를 더한 바삭한 치킨 너겟</dd>
+                  </dl>  
+                </li>
+                <li><img src="images/menu_img/side/인절미.png" alt="인절미">
+                  <p>인절미 치즈볼</p><p>Injeolmi Cheese Ball</p>
+                  <dl>
+                    <dt>인절미 치즈볼<span><br>Injeolmi Cheese Ball</span></dt>
+                    <dd>370kal</dd>
+                    <dd>모짜렐라 치즈가 듬뿍 든 바삭한 치즈볼에 고소한 인절미 가루가 더해진 인절미 치즈볼.
+                      <br>※판매제외매장 : 행담도휴게소점</dd>
+                  </dl>  
+                </li>
+                <li><img src="images/menu_img/side/어니언도넛.png" alt="어니언도넛">
+                  <p>어니언 도넛</p><p>Onion Doughnut</p>
+                  <dl>
+                    <dt>어니언 도넛<span><br>Onion Doughnut</span></dt>
+                    <dd>348kal</dd>
+                    <dd>촉촉함과 바삭함을 동시에 느낄 수 있는 NBB만의 어니언 도넛.</dd>
+                  </dl> 
+                </li>
+                <li><img src="images/menu_img/side/슈가버터_프라이.png" alt="슈가버터프라이">
+                  <p>슈가버터 프라이</p><p>Sugar Butter Fries</p>
+                  <dl>
+                    <dt>슈가버터 프라이<span><br>Sugar Butter Fries</span></dt>
+                    <dd>369kal</dd>
+                    <dd>달콤한 버터 시럽을 뿌린 감자튀김과 진한 그라나파다노 치즈 토핑의 만남</dd>
+                  </dl> 
+                </li>
+              </ul>
+            </div>
+            <div class="bevarage box num7">
+              <h3>bevarage</h3>
+              <ul class="bevarage">
+                <li><img src="images/menu_img/bevarage/브랜드콜라사이다.png" alt="브랜드콜라사이다">
+                  <p>브랜드 콜라/사이다</p><p>Brand Cola/Cider</p>
+                  <dl>
+                    <dt>브랜드 콜라/사이다<span><br>Brand Cola/Cider</span></dt>
+                    <dd>160kal</dd>
+                    <dd>노브랜드 버거에서만 만나볼 수 있는
+                      브랜드 콜라, 사이다</dd>
+                  </dl> 
+                </li>
+                <li><img src="images/menu_img/bevarage/브랜드제로콜라사이다.png" alt="브랜드제로콜라사이다">
+                  <p>브랜드 콜라/사이다 제로</p><p>Brand Cola/Cider zero</p>
+                  <dl>
+                    <dt>브랜드 콜라/사이다 제로<span><br>Brand Cola/Cider zero</span></dt>
+                    <dd>0kal</dd>
+                    <dd>부담없이 가볍게 즐길 수 있는
+                      브랜드 콜라, 사이다 제로 </dd>
+                  </dl> 
+                </li>
+                <li><img src="images/menu_img/bevarage/콜라.png" alt="콜라">
+                  <p>탄산음료<br>(펩시콜라/사이다/미린다(오렌지)/<br>펩시제로슈가(라임향))</p><p>Soda</p>
+                  <dl>
+                    <dt>탄산음료<span><br>Soda</span></dt>
+                    <dd>129~149kal</dd>
+                    <dd>탄산음료(펩시콜라/사이다/미린다(오렌지)/'펩시제로슈가(라임향))</dd>
+                  </dl> 
+                </li>
+                <li><img src="images/menu_img/bevarage/오렌지주스.png" alt="오렌지주스">
+                  <p>오렌지주스</p><p>Orange Juice</p>
+                  <dl>
+                    <dt>오렌지주스<span><br>Orange Juice</span></dt>
+                    <dd>420kal</dd>
+                    <dd></dd>
+                  </dl> 
+                </li>
+                <li><img src="images/menu_img/bevarage/커피.png" alt="커피">
+                  <p>아메리카노</p><p>Americano</p>
+                  <dl>
+                    <dt>아메리카노<span><br>Americano</span></dt>
+                    <dd>15kal</dd>
+                    <dd></dd>
+                  </dl> 
+                </li>
+                <li><img src="images/menu_img/bevarage/노라벨_생수(1).png" alt="노라벨생수">
+                  <p>노라벨 생수</p><p>Mineral water</p>
+                  <dl>
+                    <dt>노라벨 생수<span><br>Mineral water</span></dt>
+                    <dd>0kal</dd>
+                    <dd>비닐 라벨이 없어 분리배출이 편한 친환경 노라벨 생수</dd>
+                  </dl> 
+                </li>
+              </ul>
+            </div>
+        </div>
+       </section>
+    </main>
+      <footer>
+        <section id="footer">
+        <div class="footerWrap">
+        <h2 class="hidden">푸터</h2>
+        <article id="clientService">
+          <h3 class="hidden">콜센터정보</h3>
+          <img src="./images/call.png" alt="콜센터그림" id="call">
+          <p><span>고객지원센터</span></p>
+          <p>080-123-4567</p>
+          <p>평일 09:30 - 17:00 (점심 11:30 - 13:00)</p>
+        </article>
+        <article id="tos">
+          <h3 class="hidden">이용약관</h3>
+          <p>이용약관  |  개인정보처리방침  |   고객지원<br>
+            서울시 성동구 성수일로 56 백영성수센터 (주)신세계푸드<br>
+            TEL 02-3397-6000 / FAX 02-3397-6199 / 사업자등록번호 215-81-47377<br>
+            Copyright © 2015 SHINSEGAE FOOD Inc. ALL RIGHTS RESERVED</p>
+        </article>
+        <article id="otherSite">
+          <h3 class="hidden">연관사이트</h3>
+          <ul id="sns">
+            <li><a href="https://www.instagram.com/nobrandburger.official/" id="insta">인스타 바로가기</a></li>
+            <li><a href="https://www.facebook.com/NoBrandBurger/" id="facebook">페이스북 바로가기</a></li>
+          </ul>
+        <div id="related_link">
+          <h3>관련사이트</h3>
+              <ul class="linkWrap">
+                <li class="linkOn"><a href="https://www.shinsegaegroupnewsroom.com/">신세계그룹</a></li>
+                <li class="linkOn"><a href="https://www.shinsegaepoint.com/">신세계포인트</a></li>
+                <li class="smallTitle">retail</li>
+                <li class="linkOn"><a href="https://www.shinsegae.com/">신세계백화점</a></li>
+                <li class="linkOn"><a href="http://www.shinsegaefood.com/">신세계푸드</a></li>
+                <li class="linkOn"><a href="https://store.emart.com/">이마트</a></li>
+                <li class="linkOn"><a href="http://www.traders.co.kr/">이마트 트레이더스</a></li>
+                <li class="linkOn"><a href="http://www.emarteveryday.co.kr/">이마트 에브리데이</a></li>
+                <li class="linkOn"><a href="https://emart24.co.kr/">이마트24</a></li>
+                <li class="smallTitle two">food</li>
+                <li class="linkOn"><a href="http://www.shinsegae-lnb.com/">신세계L&B</a></li>
+                <li class="linkOn"><a href="https://www.starbucks.co.kr/">스타벅스커피 코리아</a></li>
+              </ul>
+        </div>
+        </article>
+      </div>
+      </section>
+      </footer>
+    
+  </body>
+</html>

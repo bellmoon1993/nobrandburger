@@ -1,0 +1,296 @@
+@charset "utf-8";
+
+/* 메뉴 배너 */
+#menuBanner {
+    display : flex;
+    height : 240px;
+    background : url(../images/메뉴배너배경.jpg) no-repeat center;
+    justify-content: center;
+    align-items: center;
+}
+
+#menuBanner p span:nth-of-type(1) {
+    color : #fff;
+}
+#menu_Title {
+    font-size : 70px;
+    text-transform: uppercase;
+}
+
+/* 메뉴페이지 영역 */
+#menuImgWrap {
+    position : relative;
+    background : #f3f3f3;
+}
+#menuTabBtn {
+    display : flex;
+    justify-content :center;
+    align-items : center;
+    margin : 0 auto;
+    width : 1200px;
+    height : 100px;
+    background : #fff;
+}
+#menuTabBtn a {
+    position: relative;
+    display : block;
+    font-size : 18px;
+    text-transform: capitalize;
+    color : #000;
+    padding : 0 20px;
+}
+#menuTabBtn .active {
+    color : #fabe00;
+    font-weight : 1000;
+}
+#menuTabBtn a::after {
+    display : block;
+    position: absolute;
+    content : ""; 
+    top : 0px; 
+    right : 0px;
+    /* width : 10px; */
+    height : 20px; 
+    border-right : 2px solid #000;
+    
+}
+#menuTabBtn a:nth-of-type(7)::after {
+    display : none;
+}
+.box {
+    margin : 0 auto;
+    width : 1200px;
+}
+.box h3 {
+    margin : 50px;
+    font-size : 24px;
+    text-transform: capitalize;
+}
+#menuImg { position : relative; }
+#menuImg ul {
+    display : grid;
+    /* grid-template-columns: repeat(3, 400px); */
+    grid-template-columns: repeat(auto-fill, minmax(400px, auto));
+}
+#menuImg ul li { 
+    position: relative;
+    display : flex;
+    flex-direction: column;
+    background : #fff;
+    padding : 30px 0 ;
+    margin : 20px;
+    align-items : center;
+
+}
+#menuImg ul li dl {
+    display : flex;
+    flex-direction: column;
+    align-items : center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    right: 0px;
+    top: 100%;
+    content: '';
+    width : 100%;
+    height : 100%; 
+    background-color: #fabe00;
+    opacity: 0;
+    text-align: center;
+    
+    }
+#menuImg ul li dl dt{
+    position : absolute;
+    top: 100%;
+    font-size: 24px;
+    font-weight: 1000;
+    padding : 5px;
+    width : 80%;
+    opacity : 0;
+    /* transform : translateY(-70%); */
+    
+}
+#menuImg ul li dl dt span {
+    font-size : 16px;
+}
+#menuImg ul li dl dd {
+    position : absolute;
+    top: 100%;
+    opacity: 0;
+
+}
+#menuImg ul li dl dd:nth-of-type(1) {
+    font-size : 20px;
+    font-weight: 1000;
+    background : #fff;
+    padding : 5px;
+    transform : translateY(-50%);
+}
+#menuImg ul li dl dd:nth-of-type(2) {
+    font-size : 16px;
+    width : 80%;
+    transform : translateY(70%);
+}
+
+#menuImg ul li img {
+    margin-bottom : 30px;
+}
+#menuImg ul li p { 
+    text-align : center;
+}
+#menuImg ul li p:nth-of-type(1) {
+    font-size : 20px;
+}
+.box:nth-of-type(1) {
+    height : 3750px; 
+}
+.box:nth-of-type(2) { 
+    height : 1300px;
+}
+.box:nth-of-type(3) {
+    height : 550px;
+}
+.box:nth-of-type(4) {
+    height : 550px;
+}
+.box:nth-of-type(5) {
+    height : 550px;
+}
+.box:nth-of-type(6) {
+    height : 1000px;
+}
+.box:nth-of-type(7) {
+    height : 1000px;
+}
+
+
+@media screen and ( max-width : 1199px ) {
+    body { min-width : 600px; }
+    .box {
+        width : 900px;
+    }
+    #menuTabBtn {
+        flex-wrap: wrap;
+        width : 900px;
+    }
+    #menuTabBtn a {
+        padding : 0 10px;
+    }
+    #menuImg ul {
+        /* grid-template-columns: repeat(3, 400px); */
+        grid-template-columns: repeat(auto-fill, minmax(320px, auto));
+    }
+    .box:nth-of-type(1) {
+        height : 5600px; 
+    }
+    .box:nth-of-type(2) { 
+        height : 1650px;
+    }
+    .box:nth-of-type(3) {
+        height : 550px;
+    }
+    .box:nth-of-type(4) {
+        height : 550px;
+    }
+    .box:nth-of-type(5) {
+        height : 900px;
+    }
+    .box:nth-of-type(6) {
+        height : 1350px;
+    }
+    .box:nth-of-type(7) {
+        height : 1350px;
+    }
+}
+@media screen and ( max-width : 899px ){
+    body { min-width : 300px; }
+    .box {
+        width : 600px;
+    }
+    #menuTabBtn { 
+        flex-wrap : wrap;
+        height : 120px;
+    }
+    #menuImg ul {
+        display : grid;
+        /* grid-template-columns: repeat(3, 400px); */
+        grid-template-columns: repeat(2, 300px);
+    }
+    #menuImg ul li img {
+        transform: scale(0.8);
+        margin-bottom : 30px;
+    }
+}
+@media screen and ( max-width : 599px ){
+    main { margin-top : 50px;}
+    #menuBanner {
+        height : 28vh;
+        width : 100%;
+        background : url(../images/메뉴배너배경.jpg) no-repeat center / cover;
+    }
+    #menuTabBtn {
+        width : 95vw;
+        height : 16.8vh;
+    } 
+    #menuTabBtn a {
+        font-size : 16px;
+    }
+    .box {
+        width : 95vw;
+    }
+    .box h3 {
+        margin : 5 0 0 10px;
+    }
+    #menuImg ul {
+        /* grid-template-columns: repeat(3, 400px); */
+        grid-template-columns: repeat(2, 48vw);
+    }
+    #menuImg ul li { 
+        padding : 15px 0 ;
+        margin : 2px;
+    }
+    #menuImg ul li img {
+        transform: scale(0.55);
+        margin-bottom : -30px;
+    }
+    #menuImg ul li p:nth-of-type(1) {
+        font-size : 16px;
+    }
+    #menuImg ul li p:nth-of-type(2) {
+        font-size : 12px;
+    }
+    #menuImg ul li dl dt {
+        font-size : 16px;
+    }
+    #menuImg ul li dl dt span {
+        font-size : 12px;
+    }
+    #menuImg ul li dl dd:nth-of-type(1) {
+        font-size : 12px;
+    }
+    #menuImg ul li dl dd:nth-of-type(2) {
+        font-size : 12px;
+    }
+    .box:nth-of-type(1) {
+        height : 510vh; 
+    }
+    .box:nth-of-type(2) { 
+        height : 150vh; 
+    }
+    .box:nth-of-type(3) {
+        height : 50vh;
+    }
+    .box:nth-of-type(4) {
+        height : 50vh;
+    }
+    .box:nth-of-type(5) {
+        height : 80vh;
+    }
+    .box:nth-of-type(6) {
+        height : 135vh;
+    }
+    .box:nth-of-type(7) {
+        height : 135vh;
+    }
+}

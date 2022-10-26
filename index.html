@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>노브랜드 버거</title>
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/menu_slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
+    <script src="./js/common.js" defer></script>
+    <script src="./js/main.js" defer></script>
+
+  </head>
+  <body>
+    <div id="headerWrap" class="on">
+      <header id="header">
+        <h1 class="logo"><a href="index.html">로고</a></h1>
+        <div class="webNav">
+        <nav id="gnb">
+          <h2 class="hidden">주메뉴</h2>
+          <ul id="gnbList">
+            <li><a href="menu.html">메뉴</a></li>
+            <li><a href="#">매장</a></li>
+            <li id="news"><a href="#">새 소식</a>
+              <ul class="snb">
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">뉴스</a></li>
+              </ul>
+            </li>
+            <li><a href="brandstory.html">브랜드 스토리</a></li>
+            <li><a href="#">가맹안내</a></li>
+          </ul>
+        </nav>
+        <nav id="ssg">
+          <h2 class="hidden">신세계 메뉴</h2>
+          <ul>
+            <li class="ssgFood"><a href="http://www.shinsegaefood.com/">신세계푸드</a></li>
+            <li class="service"><a href="http://www.shinsegaefood.com/cs/voc.sf">고객지원</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobileNav">
+        <a href="#" id="hamburgerBar">햄버거바</a>
+        <div id="mob_nav">
+          <a href="#" id="cancelBar">닫힘버튼</a>
+          <nav id="mob_gnb">
+            <h2 class="hidden">모바일주메뉴</h2>
+            <ul id="mob_gnbList">
+              <li><a href="menu.html">메뉴</a></li>
+              <li><a href="#">매장</a></li>
+              <li id="mob_news"><a href="#">새 소식</a>
+                <ul class="mob_snb">
+                  <li><a href="#">이벤트</a></li>
+                  <li><a href="#">뉴스</a></li>
+                </ul>
+              </li>
+              <li><a href="brandstory.html">브랜드 스토리</a></li>
+              <li><a href="#">가맹안내</a></li>
+            </ul>
+          </nav>
+          <nav id="mob_ssg">
+            <h2 class="hidden">신세계 메뉴</h2>
+            <ul>
+              <li class="mob_ssgFood"><a href="#">신세계푸드</a></li>
+              <li class="mob_service"><a href="#">고객지원</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      </header>
+    </div>
+    <main>
+    <a href="#" class="top">top</a>
+    <section id="slideArea">
+    <div class="container">
+      <h2 class="hidden">메인슬라이드</h2>
+        <div class="main1 slide">
+          <h3 class="hidden">NBB 시그니처 무료</h3>
+          <div class="slideWrap">
+          <a href="#">앱 주문하러 가기</a>
+          </div>
+        </div>
+        <div class="main2 slide">
+        <h3 class="hidden" >진짜 커리로 만든맛, 골드커리버거</h3>
+          <div class="slideWrap">
+          <a href="#">앱 주문하러 가기</a>
+          </div>
+        </div>
+        <div class="main3 slide ">
+        <h3 class="hidden">노브랜드 버거 샐러드</h3>
+          <div class="slideWrap">
+          <a href="#">앱 주문하러 가기</a>
+          </div>
+        </div>
+      </div>
+      <div class="slideBtn">
+        <a href="#" class="active">슬라이드1</a>
+        <a href="#">슬라이드2</a>
+        <a href="#">슬라이드3</a>
+      </div>
+      <div class="slideBtn2">
+        <a href="#" class="slidePrev">prev</a>
+        <a href="#" class="slideNext">next</a>
+      </div>
+      <div class="controlBtn">
+        <a href="#" class="pause">stop</a>
+        <a href="#" class="play">play</a>
+      </div>
+    </section>
+    <section id="foodMenu">
+    <div class="foodWrap">
+      <h2>Menu</h2>
+      <h3><a href="#" class="on">Super-licious</a></h3>
+      <div class="food superLicious">
+        <div class="menuWrap1 ">
+            <ul class="slick">
+                <li><a href="#"><img src="images/menu_img/superlicious/갈릭앤갈릭버거.png" alt="갈릭앤갈릭">
+                <p>갈릭앤갈릭</p><p>2,900₩~</p></a></li>
+                <li><a href="#"><img src="images/menu_img/superlicious/골드커리.png" alt="골드커리">
+                    <p>골드커리</p><p>2,900₩~</p></a></li>
+                <li><a href="#"><img src="images/menu_img/superlicious/더블골드커리.png" alt="더블골드커리">
+                    <p>더블 골드커리</p><p>4,600₩~</p></a></li>
+                <li><a href="#"><img src="images/menu_img/superlicious/더블치즈_베이컨_시그니처(1).png" alt="더블치즈베이컨시그니처">
+                    <p>더블치즈 베이컨<br>시그니처</p><p>4,300₩~</p></a></li>
+                <li><a href="#"><img src="images/menu_img/superlicious/페퍼로니버거_home.png" alt="페퍼로니">
+                    <p>페퍼로니</p><p>4,000₩~</p></a></li>
+                <li><a href="#"><img src="images/menu_img/superlicious/페퍼로니치킨_home.png" alt="페퍼로니치킨">
+                    <p>페퍼로니 치킨</p><p>4,300₩~</p></a></li>
+                <li><a href="#"><img src="images/menu_img/superlicious/코울슬로치킨.png" alt="코울슬로치킨">
+                    <p>코울슬로 치킨</p><p>3,900₩~</p></a></li>
+                <li><a href="#"><img src="images/menu_img/superlicious/데리마요버거.png" alt="데리마요">
+                    <p>데리마요</p><p>2,900₩~</p></a></li>
+            </ul>
+            <div id="menu1Btn">
+                <a href="#" id="prev1"><img src="./images/prev.png" alt="이전버튼"></a>
+                <a href="#" id="next1"><img src="./images/next.png" alt="다음버튼"></a>
+            </div>
+        </div>
+    </div>
+    <h3><a href="#">Signature Pack</a></h3>
+    <div class="food signaturePack">
+      <div class="menuWrap2">
+          <ul class="slick2">
+              <li><a href="#"><img src="images/menu_img/signatureburger_pack/시그니처_파티팩.png" alt="시그니처 파티팩">
+              <p>시그니처 파티팩</p><p>17,000₩~</p></a></li>
+              <li><a href="#"><img src="images/menu_img/signatureburger_pack/시그니처_투게더팩.png" alt="시그니처 투게더팩">
+                  <p>시그니처 투게더팩</p><p>12,000₩~</p></a></li>
+          </ul>
+          <div id="menu2Btn">
+              <a href="#" id="prev2"><img src="./images/prev.png" alt="이전버튼"></a>
+              <a href="#" id="next2"><img src="./images/next.png" alt="다음버튼"></a>
+          </div>
+      </div>
+    </div>
+    <h3><a href="#">House Special</a></h3>
+    <div class="food houseSpecial">
+      <div class="menuWrap3">
+          <ul class="slick3">
+              <li><a href="#"><img src="images/menu_img/house_special/페퍼로니치아바타.png" alt="페퍼로니 치아바타">
+              <p>페퍼로니 치아바타</p><p>4,900₩~</p></a></li>
+              <li><a href="#"><img src="images/menu_img/house_special/상하이포크.png" alt="크리스피 상하이포크">
+                  <p>크리스피 상하이포크</p><p>15,000₩~</p></a></li>
+          </ul>
+          <div id="menu3Btn">
+              <a href="#" id="prev3"><img src="./images/prev.png" alt="이전버튼"></a>
+              <a href="#" id="next3"><img src="./images/next.png" alt="다음버튼"></a>
+          </div>
+      </div>
+    </div>
+    <h3><a href="#">Salad</a></h3>
+    <div class="food salad">
+      <div class="menuWrap4">
+          <ul class="slick4">
+              <li><a href="#"><img src="images/menu_img/salad/상하이포크샐러드.png" alt="상하이포크샐러드">
+              <p>상하이포크샐러드</p><p>4,000₩~</p></a></li>
+              <li><a href="#"><img src="images/menu_img/salad/치킨시저샐러드.png" alt="치킨시저샐러드">
+                  <p>치킨시저 샐러드</p><p>3,800₩~</p></a></li>
+              <li><a href="#"><img src="images/menu_img/salad/그린샐러드.png" alt="그린샐러드">
+                  <p>그린 샐러드</p><p>3,300₩~</p></a></li>
+          </ul>
+          <div id="menu4Btn">
+              <a href="#" id="prev4"><img src="./images/prev.png" alt="이전버튼"></a>
+              <a href="#" id="next4"><img src="./images/next.png" alt="다음버튼"></a>
+          </div>
+      </div>
+    </div>
+    </div>
+    </section>
+    <section id="brandStory">
+    <div class="brandStoryWrap">
+      <h2 class="hidden">브랜드 스토리</h2>
+      <p>Why pay more?<br> It's good enough.</p>
+      <a href="brandstory.html">브랜드 스토리 보러가기</a>
+      <div>브랜드스토리 이미지</div>
+    </div>
+    </section>
+    <section id="storeMap">
+    <div class="storeMapWrap">
+      <h2 class="hidden">매장찾기</h2>
+      <p>고객님 주변에 있는 노브랜드 버거를
+        <br>찾아보세요!</p>
+      <a href="#">매장찾기</a>
+      <p id="storeIcon"></p>
+    </div>
+    </section>
+    <section id="appDown">
+    <div class="appDownWrap">
+      <h2 class="hidden">앱다운로드</h2>
+      <p id="nbbOrder"></p>
+      <p>NBB앱으로 쉽고 편하고 빠르게<br>
+        주문해보세요!</p>
+      <p id="downIcon"></p>
+      <a href="#" id="google">구글플레이 다운받기</a>
+      <a href="#" id="apple">애플스토어 다운받기</a>
+    </div>
+    </section>
+    <section id="manager">
+    <div class="managerWrap">
+      <h2 class="hidden">가맹점모집</h2>
+      <dl>
+        <dt>노브랜드 버거 예비 가맹점<br>
+          점주님을 기다립니다</dt>
+        <dd>노브랜드 버거가 여러분과 함께  새로운 성공을 준비합니다</dd>
+      </dl>
+      <p id="storeIcon2"></p>
+      <a href="#">노브랜드 버거 가맹 안내</a>
+    </div>
+    </section>
+    <section id="burgerNews">
+    <div class="newsWrap">
+      <h2>노브랜드 버거 뉴스</h2>
+      <p>nobrand burger news</p>
+      <div class="news1 box">
+        <a href="#">
+          <dl>
+            <dt>노브랜드버거매장 사진</dt>
+            <dd>신세계푸드 ‘노브랜드 버거’ 충청권
+              확대나서…첫 매장 ‘대전시청점’ 오픈</dd>
+          </dl>
+        </a>
+      </div>
+      <div class="news2 box">
+        <a href="#">
+          <dl>
+            <dt>유소년야구단 사진</dt>
+            <dd>신세계푸드, 유소년 야구 꿈나무 지원 나선다</dd>
+          </dl>
+        </a>
+      </div>
+      <div class="news3 box">
+        <a href="#">
+          <dl>
+            <dt>신세계푸드 탄산사진</dt>
+            <dd>“콜라, 작품이 되다”...신세계푸드,<br>
+              ‘브랜드 콜라 나나아스트로’ 에디션 출시</dd>
+          </dl>
+        </a>
+      </div>
+      <a href="#" id="newsMore">뉴스 더보기</a>
+    </div>
+    </section>
+    <section id="burgerTv">
+      <h2><span>no brand</span> burger TV</h2>
+    <div class="tvWrap">
+      <ul>
+        <li class="video-container">
+          <iframe src="https://www.youtube.com/embed/8sXwUkHiZGo"
+          title="YouTube video player"  allow="accelerometer; autoplay;
+          clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>[한선화X노브랜드버거] 내겐 너무 버거운 그녀 (Ep.1)</p>
+        </li>
+        <li class="video-container">
+          <iframe src="https://www.youtube.com/embed/M0qFqSIuHxo"
+          title="YouTube video player"  allow="accelerometer; autoplay;
+          clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>[한선화X노브랜드버거] 내겐 너무 버거운 그녀 (Ep.2)</p>
+        </li>
+        <li class="video-container">
+          <iframe src="https://www.youtube.com/embed/MSYdQQHYJk4"
+          title="YouTube video player"  allow="accelerometer; autoplay;
+          clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>[한선화X노브랜드버거] 내겐 너무 버거운 그녀 (Ep.3)</p>
+        </li>
+        <li class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/TxrrWmPfiEM"
+          title="YouTube video player"  allow="accelerometer; autoplay;
+          clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>콜라 사이다 열라 맛있다 | [좋광고] EP1</p>
+        </li>
+        <li class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/gOPUqlFDBhw"
+          title="YouTube video player"  allow="accelerometer; autoplay;
+          clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>[노브랜드버거] 노브랜드밴드 "버거송" FULL VERSION 영상 공개!</p>
+        </li>
+      </ul>
+      <div id="videoBtn">
+        <a href="#" class="tvprev">prev</a>
+        <a href="#" class="tvnext">next</a>
+      </div>
+      <div id="videoBtn2">
+        <a href="#" class="tvprev2">prev</a>
+        <a href="#" class="tvnext2">next</a>
+      </div>
+    </div>
+    <div class="tvBox">
+    <div id="mobTVWrap">
+        <ul class="slick5">
+          <li class="mob-video-container">
+            <iframe src="https://www.youtube.com/embed/8sXwUkHiZGo"
+            title="YouTube video player" allow="accelerometer; autoplay;
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>[한선화X노브랜드버거] 내겐 너무 버거운 그녀 (Ep.1)</p>
+          </li>
+          <li class="mob-video-container">
+            <iframe src="https://www.youtube.com/embed/M0qFqSIuHxo"
+            title="YouTube video player" allow="accelerometer; autoplay;
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>[한선화X노브랜드버거] 내겐 너무 버거운 그녀 (Ep.2)</p>
+          </li>
+          <li class="mob-video-container">
+            <iframe src="https://www.youtube.com/embed/MSYdQQHYJk4"
+            title="YouTube video player" allow="accelerometer; autoplay;
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>[한선화X노브랜드버거] 내겐 너무 버거운 그녀 (Ep.3)</p>
+          </li>
+          <li class="mob-video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TxrrWmPfiEM"
+            title="YouTube video player" allow="accelerometer; autoplay;
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>콜라 사이다 열라 맛있다 | [좋광고] EP1</p>
+          </li>
+          <li class="mob-video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gOPUqlFDBhw"
+            title="YouTube video player"  allow="accelerometer; autoplay;
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>[노브랜드버거] 노브랜드밴드 "버거송" FULL VERSION 영상 공개!</p>
+          </li>
+        </ul>
+        <div id="videoBtn3">
+          <a href="#" class="tvprev3">prev</a>
+          <a href="#" class="tvnext3">next</a>
+        </div>
+      </div>
+    </div>
+    </section>
+    </main>
+      <footer>
+        <section id="footer">
+        <div class="footerWrap">
+        <h2 class="hidden">푸터</h2>
+        <article id="clientService">
+          <h3 class="hidden">콜센터정보</h3>
+          <img src="./images/call.png" alt="콜센터그림" id="call">
+          <p><span>고객지원센터</span></p>
+          <p>080-123-4567</p>
+          <p>평일 09:30 - 17:00 (점심 11:30 - 13:00)</p>
+        </article>
+        <article id="tos">
+          <h3 class="hidden">이용약관</h3>
+          <p>이용약관  |  개인정보처리방침  |   고객지원<br>
+            서울시 성동구 성수일로 56 백영성수센터 (주)신세계푸드<br>
+            TEL 02-3397-6000 / FAX 02-3397-6199 / 사업자등록번호 215-81-47377<br>
+            Copyright © 2015 SHINSEGAE FOOD Inc. ALL RIGHTS RESERVED</p>
+        </article>
+        <article id="otherSite">
+          <h3 class="hidden">연관사이트</h3>
+        <ul id="sns">
+          <li><a href="https://www.instagram.com/nobrandburger.official/" id="insta">인스타 바로가기</a></li>
+          <li><a href="https://www.facebook.com/NoBrandBurger/" id="facebook">페이스북 바로가기</a></li>
+        </ul>
+        <div id="related_link">
+          <h3>관련사이트</h3>
+              <ul class="linkWrap">
+                <li class="linkOn"><a href="https://www.shinsegaegroupnewsroom.com/">신세계그룹</a></li>
+                <li class="linkOn"><a href="https://www.shinsegaepoint.com/">신세계포인트</a></li>
+                <li class="smallTitle">retail</li>
+                <li class="linkOn"><a href="https://www.shinsegae.com/">신세계백화점</a></li>
+                <li class="linkOn"><a href="http://www.shinsegaefood.com/">신세계푸드</a></li>
+                <li class="linkOn"><a href="https://store.emart.com/">이마트</a></li>
+                <li class="linkOn"><a href="http://www.traders.co.kr/">이마트 트레이더스</a></li>
+                <li class="linkOn"><a href="http://www.emarteveryday.co.kr/">이마트 에브리데이</a></li>
+                <li class="linkOn"><a href="https://emart24.co.kr/">이마트24</a></li>
+                <li class="smallTitle two">food</li>
+                <li class="linkOn"><a href="http://www.shinsegae-lnb.com/">신세계L&B</a></li>
+                <li class="linkOn"><a href="https://www.starbucks.co.kr/">스타벅스커피 코리아</a></li>
+              </ul>
+        </div>
+        </article>
+      </div>
+      </section>
+      </footer>
+
+  </body>
+</html>

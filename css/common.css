@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* 초기화 */
+* { box-sizing: border-box;}
+body, h1, h2, h3, ul, p, dl, dt, dd { margin: 0; padding: 0; }
+li { list-style: none; }
+a { text-decoration: none; }
+.hidden { position: absolute; left: -9999px; }
+/* body { overflow-x : hidden;} */
+/* 웹폰트 */
+@font-face {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+body { min-width : 1200px;
+    font-family : "NanumGothic";}
+/* 헤더 */
+#headerWrap { position : absolute; display: flex; justify-content: center;
+               top: 0; left: 0; z-index: 1000;
+               width: 100%; height: 100px;
+              background: linear-gradient(to bottom, #fff 100px, #fff 100px);
+            border-bottom : 1px solid #ccc; box-sizing: border-box;}
+#header {  height: 100px; 
+          display: flex; justify-content: center;}
+.mobileNav { display : none; }
+#header .logo { position: absolute; top: 0; left: 0;  }
+#header .logo a { display : block; width : 300px; height : 100px; 
+    text-indent: -9999px; background : url(../logo/logo.png) no-repeat center / cover;}
+/* gnb */
+/* #gnb { width: 100%; background: #fff; } */
+#gnbList { display: flex; }
+#gnbList li { text-align: center; }
+#gnbList > li { width: 180px; height : 100px; line-height : 100px;}
+#gnbList > li > a { font-size : 20px; color : #000; font-weight : 500; box-sizing: border-box;}
+
+#gnbList > li:hover { border-bottom : 3px solid #fabe00; box-sizing: border-box; }
+#gnbList > li:hover > a { color : #fabe00; }
+/* snb */
+.snb { position: absolute; top: 100px; left: 0; width: 100%; background: #fff;
+      display : flex; justify-content: center; }
+.snb li { margin : 5px 50px; line-height: 50px; }
+.snb li a { color : #000; }
+/* .snb:hover { height: 200px; background: #6b8d90; border : 1px solid #000; } */
+
+/* 메뉴롤오버 */
+.snb li:hover a { color : #fabe00;   }
+
+
+/* ssg */
+#ssg { position : absolute; top : 40px; right : 20px; }
+#ssg ul { display : flex; }
+#ssg ul li { position : relative; }
+#ssg ul li.ssgFood { padding-right : 10px; }
+#ssg ul li.service { padding-left : 10px; }
+#ssg ul li.ssgFood::after { content : ""; position : absolute; top : 4px; right : 0;
+height : 14px; border-right : 1px solid #000;}
+#ssg ul li.service::before { content : ""; position : absolute; top : 4px; left : 0;
+height : 14px; border-left : 1px solid #000; }
+#ssg ul li a { color : #000;}
+
+main { margin-top: 100px }
+/* content */
+/* #mainSlide { position: relative; height: 500px; margin-top: 100px; background: #fabe00; } */
+
+/* top 버튼 */
+.top { position: fixed; right: 20px; bottom: 100px;
+  width: 50px; height: 50px;
+  background: url(../images/top.png) no-repeat; background-size : cover; text-indent : -9999px; z-index : 999; }
+
+/* 푸터 */
+#footer { background : #2a2619; height : 344px; }
+.footerWrap { position : relative; width : 1200px; height : 344px; background : #2a2619;
+  margin : 0 auto; color : #fff;  }
+#clientService { padding : 40px 30px; }
+#call { float : left; margin-right : 10px;}
+#clientService p span { font-size : 24px; font-weight : bold; }
+#clientService p:nth-of-type(2) { font-size : 36px; font-weight : bold;}
+#clientService p:nth-of-type(3) { clear : left;}
+#tos { padding : 0 30px;}
+#otherSite { position : absolute; bottom : 100px; right : 20px;
+  width : 280px; height : 130px; }
+#sns { display : flex; padding-left : 150px; }
+#insta { display : block; width : 64px; height : 64px;
+  background : url(../images/insta.png) no-repeat; text-indent : -9999px; }
+#facebook { display : block; width : 64px; height : 64px;
+  background : url(../images/facebook.png) no-repeat; text-indent : -9999px; }
+#related_link { position : absolute; bottom : 20px; right : 0; width : 250px; height : 40px; color : #000; background : #fff; border : 1px thin #ccc; 
+  border : 1px solid #ccc; overflow : visible;  }
+#related_link h3 { position : relative; width : 250px; height : 40px; line-height : 40px; margin : 0 auto; font-size : 16px; font-weight : 600; 
+  background : url(../images/triangle.png) no-repeat; background-position : 90% 40%; box-sizing : border-box; padding : 0 10px 10px 10px;  }
+#related_link .linkWrap { position : absolute; bottom : 40px; left : -1px; border : 1px thin #ccc; }
+#related_link .linkWrap li { width : 250px; height : 30px; background : #fff; box-sizing: border-box; padding : 5px 10px; font-size : 14px; }
+#related_link .linkWrap li:hover { background : rgb(44, 44, 44);}
+#related_link .linkWrap li a { display : block; width : 250px; height : 30px; color : #000; }
+#related_link .linkWrap li:hover a { color : #fff;}
+#related_link .linkWrap .smallTitle { color : rgb(103, 103, 103); text-transform : uppercase; font-size : 16px; font-weight : bold; }
+#related_link .linkWrap .smallTitle:hover { color : rgb(103, 103, 103); background : #fff;}
+#related_link .linkWrap .smallTitle::after { display : block; position : absolute; top : 75px; left : 70px; content : ""; 
+  width : 160px; height : 15px; border-top : 2px solid #979797; }
+#related_link .linkWrap .smallTitle.two::after { display : block; position : absolute; top : 285px; left : 70px; content : ""; 
+  width : 160px; height : 15px; border-top : 2px solid #979797; }
+
+/* 1199이하 600이상 */
+@media screen and ( max-width : 1199px ) {
+  body { overflow-x : hidden;}
+  main { margin-top: 170px; }
+  /* 메인네비 */
+  #header { position : relative; display : block; width : 100%; }
+  #header .logo { position: absolute; top: 0px; left : 50%; transform : translateX(-50%) }
+  #gnb { position : absolute; height : 70px; top : 100px; left : 0; z-index : 400;
+    width : 100%; background : #fff;
+   }
+  #gnbList > li { width: 20%; height : 70px; line-height : 70px; }
+  #gnbList > li:hover > a { color: #fabe00;}
+  .snb { top: 69px; }
+  #slideArea { position : relative; }
+  /* 푸터 */
+  #footer { min-width : 600px; }
+  .footerWrap { width : 100%; }
+  #otherSite { bottom : 150px;}
+}
+
+/* 600이하(mobile) */
+@media screen and ( max-width : 600px ) {
+  * { box-sizing : border-box;}
+  #headerWrap { height : 50px; }
+  /* .slideBtn { z-index : -1;} */
+  #header { height : 50px; }
+  #header .logo { position: absolute; top: -25px; left : 50%; transform : translateX(-50%) scale(0.5); }
+  
+    /* 모바일네비 */
+  .webNav { display : none; }
+  .mobileNav { display : block; }
+  #hamburgerBar { position : absolute; top: 10px; left : 3%; width : 40px; height : 30px; background : url(../images/햄버거바.png) no-repeat; text-indent : -9999px; z-index : 900;}
+  #mob_nav { display : block; position : fixed; width : 100%; height : 610px; background : #f8f8f8; z-index : 999; }
+  #cancelBar { display : block; position : absolute; top : 12px; left : 4.5%; width : 40px; height : 30px; background: url(../images/mobile/x.png) no-repeat; text-indent : -9999px;}
+  #mob_gnb { height : 436px; width : 100%; top : 40px; background : #f8f8f8; border : none;  }
+  #mob_gnbList { display: flex; flex-direction: column; margin-top : 50px; }
+  #mob_gnbList li { text-align : left; margin : 0 auto; }
+  #mob_gnbList > li { width: 90%; height : 70px; padding-top: 0; line-height : 70px; border-bottom : 1px solid #979797; 
+    background : url(../images/부등호.png) no-repeat right; }
+  #mob_gnbList > li:nth-of-type(3) { height : 160px; background : url(../images/부등호.png) no-repeat right; background-position-y: 17%; }
+  #mob_gnbList > li > a { display: block; height: 60px; font-size : 20px; color : #000; font-weight : 500; box-sizing: border-box;}
+  #mob_gnbList > li:hover { border-bottom : 1px solid #979797; }
+  #mob_gnbList > li:hover > a { color: #000; border-bottom : none; }
+  
+  /* snb */
+.mob_snb { position: relative; top: 5px; left: 0; height : 100px; width: 100%; background: #f8f8f8;
+  border-top: none; 
+  display : flex; flex-direction: column; border-bottom : 1px solid #979797; }
+.mob_snb li { margin : 0; width : 95%; line-height: 45px; }
+.mob_snb li a { color : #000;}
+
+
+/* ssg */
+#mob_ssg { position : absolute; width : 100%; height : 100px; top : 500px; right : 0px; }
+#mob_ssg ul { display : flex; width : 90%; height : 100px; margin : 0 auto; flex-direction: column; justify-content: space-around;}
+#mob_ssg ul li { position : relative; }
+#mob_ssg ul li a { color : #000; font-weight : 550;}
+#mob_ssg ul li.ssgFood { padding-right : 0px; }
+#mob_ssg ul li.service { padding-left : 0px; }
+#mob_ssg ul li.ssgFood::after { content : none; }
+#mob_ssg ul li.service::before { content : none; }
+
+
+  #slideArea { position : relative; }
+
+/* 푸터 */
+#footer { background : #2a2619; height : 250px; min-width : 0px; width : 100%;}
+.footerWrap { position : relative; width : 80vw; height : 250px; background : #2a2619;
+  margin : 0 auto; color : #fff;  }
+#clientService { padding : 3vw 0; }
+#call { float : left; margin-right : 10px; width : 40px; height : 50px;}
+#clientService p span { font-size : 20px; font-weight : bold; }
+#clientService p:nth-of-type(2) { font-size : 20px; font-weight : bold;}
+#clientService p:nth-of-type(3) { clear : left; font-size : 12px;}
+#tos { padding : 0px; font-size : 12px;}
+#otherSite { position : absolute; bottom : 30px; left : 0px;
+  width : 100px; height : 50px; }
+#sns { display : flex; padding-left : 0px; }
+#insta { display : block; width : 40px; height : 40px;
+  background : url(../images/insta.png) no-repeat center / cover; text-indent : -9999px; }
+#facebook { display : block; width : 40px; height : 40px;
+  background : url(../images/facebook.png) no-repeat center / cover; text-indent : -9999px; }
+#related_link { position : absolute; bottom : 20px; left : 100px; width : 200px; height : 30px; color : #000; background : #fff; border : 1px thin #ccc; 
+  border : 1px solid #ccc; overflow : visible; }
+#related_link h3 { position : relative; width : 200px; height : 30px; line-height : 30px; margin : 0 auto; font-size : 16px; font-weight : 600; 
+  background : url(../images/triangle.png) no-repeat; background-position : 90% 40%; box-sizing : border-box; padding : 0px 10px 10px 10px;  }
+#related_link .linkWrap { position : absolute; bottom : 30px; left : -1px; border : 1px thin #ccc; }
+#related_link .linkWrap .smallTitle { color : rgb(103, 103, 103); text-transform : uppercase; font-size : 16px; font-weight : bold; }
+#related_link .linkWrap li { width : 200px; height : 30px; background : #fff; box-sizing: border-box; padding : 5px 10px; font-size : 14px; }
+#related_link .linkWrap li:hover { background : rgb(44, 44, 44);}
+#related_link .linkWrap .smallTitle:hover { color : rgb(103, 103, 103); background : #fff;}
+#related_link .linkWrap .smallTitle::after { 
+  width : 110px; }
+#related_link .linkWrap .smallTitle.two::after { 
+  width : 110px; }
+
+
+}
